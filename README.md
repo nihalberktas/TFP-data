@@ -1,2 +1,25 @@
 # TFP-data
 imdb and dblp datasets used in computations of Team Formation Problem
+imdbskills 1021x27 a_{ij} matrix
+imdbSPdist the shortest path distances p_{ij} 1021x1021
+dblpskills58 12855x58 a_{ij} skill matrix
+dblpNoOfPubAndDistance58 edge distances c_{ij} at the last column
+
+IMDB network:
+The nodes of the network are the actors who appeared in the movies from year 2000 to 2002 (1021 actors)
+Skills are the movie genres (27 genres)
+Data (IMDB_coauthor.csv and IMDB_skill.csv) is taken from https://www.dropbox.com/sh/hmus2o8owr0anj9/XB1JslGCDn via http://home.cse.ust.hk/faculty/wilfred/wangxinyu. 
+In IMDB_coauthor.csv the line gives information about the number of movies two actors played together. For example the first line starts with Belladonna,263,Broder Todd,2,Cross Logan,2,... It means Belladone has 263 movies and 2 of them is common with Broder Todd.
+
+
+DBLP social network generation:
+database is dated 01.11.2017.
+some keywords are taken as "skills".
+the keywords in the file dblpkeywords.txt is searched in the titles of papers published in the following journals and conferences between years 2010-2016 {SC, AMCIS, MOBICOM, UAI, ICIS, SIGKDD, SIGMOD, VLDB, ICDE, ICDT, EDBT, PODS,WWW, KDD, SDM, PKDD, ICDM, ICML, ECML, COLT, UAI, SODA, FOCS, STOC, STACS}
+If a paper title includes a keyword then the authors of the paper has that "skill".
+This is how 12855x58 a_{ij} skill matrix is constructed (dblpskills58.txt)
+Each skillful author is a part of the social network.
+If two authors have at least 2 common papers then there is an edge connecting them. Let P_i the set of papers of author i. The distance between i and j is 1- (|P_i \cap P_j|/|P_i \cup P_j|) 
+Using those distance all pair shortest path distances are found.
+As the all pair shortest path distance matrix is so big for github, the edge distances are given in the last column of dblpNoOfPubAndDistance58.txt file. The order of columns in this file as follows:
+Node(i) - Name(i) - Node(j) - Name(j) - NoOfPub(i) - NoOfPub(j) - NoOfCommonPubOf(i)and(j) - EdgeDistance(c_{ij})
