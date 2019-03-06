@@ -16,7 +16,7 @@ DBLP social network generation:
 database is dated 01.11.2017.
 some keywords are taken as "skills".
 the keywords in the file dblpkeywords.txt is searched in the titles of papers published in the following journals and conferences between years 2010-2016 {SC, AMCIS, MOBICOM, UAI, ICIS, SIGKDD, SIGMOD, VLDB, ICDE, ICDT, EDBT, PODS,WWW, KDD, SDM, PKDD, ICDM, ICML, ECML, COLT, UAI, SODA, FOCS, STOC, STACS}
-If a paper title includes a keyword then the authors of the paper has that "skill".
+If a paper title includes a keyword then the authors of the paper has that "skill". The keywords that are used as skills are listed in dblpkeywords.txt
 This is how 12855x58 a_{ij} skill matrix is constructed (dblpskills58.txt)
 Each skillful author is a part of the social network.
 If two authors have at least 2 common papers then there is an edge connecting them. Let P_i the set of papers of author i. The distance between i and j is 1- (|P_i \cap P_j|/|P_i \cup P_j|) 
