@@ -11,6 +11,8 @@ Skills are the movie genres (27 genres)
 Data (IMDB_coauthor.csv and IMDB_skill.csv) is taken from https://www.dropbox.com/sh/hmus2o8owr0anj9/XB1JslGCDn via http://home.cse.ust.hk/faculty/wilfred/wangxinyu. 
 In IMDB_coauthor.csv the line gives information about the number of movies two actors played together. For example the first line starts with Belladonna,263,Broder Todd,2,Cross Logan,2,... It means Belladone has 263 movies and 2 of them is common with Broder Todd.
 
+For the experiment we generated intances with different number of required skills. The information related to the instances can be found in "imdb instance information.txt". 
+m is the number of skills required in that instances. And it takes value from the set $\{4,6,8,10,12,14,16,18,20\}$. For each $m$, 100 instances are randomly generated in a way that the set of required skills is different in each instance. The required skills are indicated in the second column. qno is the number of people who have at least one of the required skills and it is written to give an idea about the size of that specific instance.
 
 DBLP social network generation:
 database is dated 01.11.2017.
