@@ -1,4 +1,4 @@
-k	skills	        qno	seed
+m	skills	        qno	seed
 4	0,10,23,24,	396	seed=1
 4	6,16,21,22,	347	seed=2
 4	10,12,15,23,	292	seed=3
