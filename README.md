@@ -15,7 +15,7 @@ IMDB network:
 The nodes of the network are the actors who appeared in the movies from year 2000 to 2002 (1021 actors)
 Skills are the movie genres (27 genres)
 
-Data (IMDB_coauthor.csv and IMDB_skill.csv) is taken from https://www.dropbox.com/sh/hmus2o8owr0anj9/XB1JslGCDn via http://home.cse.ust.hk/faculty/wilfred/wangxinyu. 
+Data (IMDB_coauthor.csv and IMDB_skill.csv) is taken from https://www.dropbox.com/sh/hmus2o8owr0anj9/XB1JslGCDn via http://home.cse.ust.hk/faculty/wilfred/wangxinyu. IMDB_skill.csv is the original skill data. We also used a skill data which is randomly generated and its information can be found in the file "imdb_random_27_skills.txt"
 
 In IMDB_coauthor.csv the line gives information about the number of movies two actors played together. For example the first line starts with Belladonna,263,Broder Todd,2,Cross Logan,2,... It means Belladone has 263 movies and 2 of them is common with Broder Todd.
 
@@ -41,7 +41,7 @@ If two authors have at least 2 common papers then there is an edge connecting th
 
 Using those distance all pair shortest path distances are found.
 
-As the all pair shortest path distance matrix is so big for github, the edge distances are given in the last column of dblpNoOfPubAndDistance58.txt file. The order of columns in this file as follows:
+As the all pair shortest path distance matrix is too big for github, the edge distances are given in the last column of dblpNoOfPubAndDistance58.txt file. The order of columns in this file as follows:
 
 Node(i) - Name(i) - Node(j) - Name(j) - NoOfPub(i) - NoOfPub(j) - NoOfCommonPubOf(i)and(j) - EdgeDistance(c_{ij})
 
