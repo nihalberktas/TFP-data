@@ -45,4 +45,6 @@ As the all pair shortest path distance matrix is so big for github, the edge dis
 
 Node(i) - Name(i) - Node(j) - Name(j) - NoOfPub(i) - NoOfPub(j) - NoOfCommonPubOf(i)and(j) - EdgeDistance(c_{ij})
 
+In the excel file named "imdb TFP-SD results all methods.xls" we present the instance details, optimal solutions and solution times for IMDB instances for all solution method used in the computational experiments. 
+
 
