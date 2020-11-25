@@ -3,7 +3,7 @@ This folder presents imdb and dblp datasets used in computations of Team Formati
 
 imdbskills 1021x27 a_{ij} matrix
 
-imdbSPdist the shortest path distances p_{ij} 1021x1021
+imdbSPdist3digits the shortest path distances p_{ij} 1021x1021
 
 dblpskills58 12855x58 a_{ij} skill matrix
 
@@ -45,6 +45,6 @@ As the all pair shortest path distance matrix is too big for github, the edge di
 
 Node(i) - Name(i) - Node(j) - Name(j) - NoOfPub(i) - NoOfPub(j) - NoOfCommonPubOf(i)and(j) - EdgeDistance(c_{ij})
 
-In the excel file named "imdb TFP-SD results all methods.xls" we present the instance details, optimal solutions and solution times for IMDB instances for all solution method used in the computational experiments. 
+In the excel file named "imdb TFP-SD instances and optimal solutions.xls" we present the instance details, optimal solutions and solution times of the MIP formulation and the branch-and-bound algorithm.
 
 
